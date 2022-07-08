@@ -1,3 +1,4 @@
+using Internal;
 using System;
 class HeadsorTails
 {
@@ -22,5 +23,13 @@ class HeadsorTails
             }
         }
         Console.WriteLine("Heads: " + HeadCount + " Tails: " + TailCount);
+        if(HeadCount > TailCount)
+        {
+            Console.WriteLine("You won");
+        }
+        else
+        {
+            Console.WriteLine("You lose");
+        }
     }
 }
