@@ -7,6 +7,10 @@ class HeadsorTails
         Random random = new Random();
         int condition = 0;
         int HeadCount = 0, TailCount = 0;
+        string Name;
+        Console.WriteLine("Who are you?");
+        Name = Console.ReadLine();
+        Console.WriteLine("Hello, " + Name + "!");
         Console.WriteLine("Tossing a coin...");
         for(int i = 0; i < 3; i++)
         {
@@ -25,11 +29,11 @@ class HeadsorTails
         Console.WriteLine("Heads: " + HeadCount + " Tails: " + TailCount);
         if(HeadCount > TailCount)
         {
-            Console.WriteLine("You won");
+            Console.WriteLine(Name + " won");
         }
         else
         {
-            Console.WriteLine("You lose");
+            Console.WriteLine(Name + " lose");
         }
     }
 }
